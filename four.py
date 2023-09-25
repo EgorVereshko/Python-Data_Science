@@ -2,10 +2,10 @@ from functools import reduce
 
 
 def magic(number):
-    res = 0
+    result = 0
     while number > 9:
         number = reduce(lambda x, y: x*int(y), str(number), 1)
-        res += 1
+        result += 1
     return res
 
 
