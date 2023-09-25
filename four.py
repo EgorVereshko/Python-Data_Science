@@ -6,7 +6,7 @@ def magic(number):
     while number > 9:
         number = reduce(lambda x, y: x*int(y), str(number), 1)
         result += 1
-    return res
+    return result
 
 
 print(magic(39))
