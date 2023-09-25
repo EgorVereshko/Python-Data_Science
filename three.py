@@ -1,10 +1,10 @@
 def func(number):
-    summa = 0
+    result = 0
     string = str(bin(number))
     for i in range(len(string)):
         if string[i] == '1':
-            summa += 1
-    return summa
+            result += 1
+    return result
 
 
 print(func(8))
