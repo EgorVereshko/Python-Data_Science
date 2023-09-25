@@ -1,10 +1,10 @@
 def func(string):
-    summa = 0
+    result = 0
     spisok = ["a", "e", "i", "o", "u"]
     for i in string:
         if i in spisok:
-            summa += 1
-    return summa
+            result += 1
+    return result
 
 
 print(func("aagi"))
