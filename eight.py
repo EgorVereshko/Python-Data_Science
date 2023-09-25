@@ -1,10 +1,10 @@
-def func(n):
-    s = len(str(n))
+def func(number):
+    s = len(str(number))
     if s % 2 == 0:
         k1, k2 = 0, 0
-        for i in str(n)[:(s//2)-1]:
+        for i in str(number)[:(s//2)-1]:
             k1 += int(i)
-        for j in str(n)[(s//2)+1:]:
+        for j in str(number)[(s//2)+1:]:
             k2 += int(j)
         if k1 == k2:
             return "Balanced"
@@ -12,9 +12,9 @@ def func(n):
 
     if s % 2 != 0:
         k1, k2 = 0, 0
-        for i in str(n)[:s//2]:
+        for i in str(number)[:s//2]:
             k1 += int(i)
-        for j in str(n)[(s//2)+1:]:
+        for j in str(number)[(s//2)+1:]:
             k2 += int(j)
         if k1 == k2:
             return "Balanced"
