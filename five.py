@@ -1,10 +1,14 @@
-def func(vector):
-    total = 0
-    for i in range(1, vector+1):
-        total += i
-    average = total / vector
-    result = 1/vector * total * (vector-average)**2
-    return result
+import numpy as np
 
 
-print(func(25))
+def func(actual, pred, n):
+    actual = np.array(actual)
+    pred = np.array(pred)
+    k = 0
+    for i in range(1, n+1):
+        k += i
+
+    return 1/n * k * (pred - actual)**2
+
+
+print(func(10, 5, 2))
