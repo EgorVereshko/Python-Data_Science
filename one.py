@@ -8,3 +8,4 @@ def func(string):
 
 
 print(func("aagi"))
+print(func("gtpofarghlitrehgbu"))
