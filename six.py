@@ -10,7 +10,23 @@ def func(number):
     if number > 1:
         result += str(number)
 
-    return result
+    #2222257711
+
+    k = 1
+    s = ""
+    for i in range(len(result)-1):
+        if result[i] == result[i+1]:
+            k += 1
+            continue
+        if k == 1:
+            s += "(" + result[i] + ")"
+        else:
+            s += "(" + result[i] + str(k) + ")"
+        k = 1
+
+    s += "(" + str(number) + ")"
+
+    return s
 
 
 print(func(86240))
