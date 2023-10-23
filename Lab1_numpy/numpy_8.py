@@ -2,11 +2,11 @@ import numpy as np
 
 
 def one_hot_encoding(vector):
-    max_label = np.max(vector) # Определение максимальной метки класса
-    result = np.zeros((len(vector), max_label + 1)) # Создание нулевой матрицы нужных размеров
+    max_label = np.max(vector)
+    result = np.zeros((len(vector), max_label + 1))
 
-    for i, label in enumerate(vector): # происходит перебор элементов вектора
-        result[i][label] = 1 # Установка 1 на месте метки класса
+    for i, label in enumerate(vector):
+        result[i][label] = 1
     return result
 
 
