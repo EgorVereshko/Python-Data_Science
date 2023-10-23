@@ -6,7 +6,7 @@ def chess(m, n, a, b):
 
     for i in range(m):
         for j in range(n):
-            if (i+j) % 2 == 0: # Проверяем, является ли сумма индексов строки и столбца четным числом
+            if (i+j) % 2 == 0:
                 matrix[i][j] = a
             else:
                 matrix[i][j] = b
