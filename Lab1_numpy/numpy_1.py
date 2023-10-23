@@ -2,14 +2,11 @@ import numpy as np
 
 
 def sum_prod(matrix_list, vector_list):
-    result = np.zeros_like(vector_list[0]) # Возвращает массив нулей той же формы и типа, что и заданный массив.
+    result = np.zeros_like(vector_list[0])
 
     for matrix, vector in zip(matrix_list, vector_list):
-        # Функция zip() в Python создает итератор, который объединяет элементы из нескольких источников данных.
-        # Эта функция работает со списками, кортежами, множествами и словарями для создания списков или кортежей,
-        # включающих все эти данные.
-        multiply = np.dot(matrix, vector) # Произведение матрицы на вектор
-        result = np.add(result, multiply) # Сумма произведения с результатом
+        multiply = np.dot(matrix, vector)
+        result = np.add(result, multiply)
 
     return result
 
